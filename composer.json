@@ -1,0 +1,50 @@
+{
+    "name": "lupennat/import-export-card",
+    "description": "Laravel Nova - Import Export Card",
+    "keywords": [
+        "laravel",
+        "nova"
+    ],
+    "authors": [
+        {
+          "name": "Claudio Pennati",
+          "email": "claudio.pennati@gmail.com"
+        }
+      ],
+    "license": "MIT",
+    "require": {
+        "php": "^7.4|^8.0",
+        "laravel/nova": "^4.12",
+        "maatwebsite/excel": "^3.1",
+        "nova-kit/nova-packages-tool": "^1.3"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3.16"
+    },
+    "autoload": {
+        "psr-4": {
+            "Lupennat\\ImportExportCard\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Lupennat\\ImportExportCard\\ImportExportCardServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "repositories": [
+    {
+        "type": "composer",
+        "url": "https://nova.laravel.com"
+    }
+    ],
+    "scripts": {
+        "php-cs-fixer": "vendor/bin/php-cs-fixer fix"
+    }
+}
